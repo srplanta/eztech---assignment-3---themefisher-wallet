@@ -512,6 +512,10 @@ h3 {
     text-align: center;
     padding: 0rem 20rem;
 }
+.md-center{
+    padding: 0rem 10rem;
+    text-align: center;
+}
 
 .card-container {
     display: grid;
@@ -567,7 +571,7 @@ h3 {
     /* padding: 1rem; */
     /* box-shadow: 0px 0px 80px 0px #d4d1d1; */
     border-radius: .5rem;
-    padding: 3rem;
+    padding: 3rem 10rem;
 }
 
 .accordian {
@@ -721,6 +725,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .card-icon {
@@ -850,12 +855,19 @@ h3 {
 }
 
 .services-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+/* .services-cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 2rem;
     padding-top: 1rem;
-}
+} */
 
 .services-cards-container-no-gap {
     display: grid;
@@ -873,6 +885,7 @@ h3 {
 }
 
 .service-card {
+    width: 30%;
     border: none;
     border-radius: .7rem;
     padding: 3rem 2rem;
@@ -989,13 +1002,22 @@ h3 {
 }
 
 .article-cards-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 
+.article-card {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 1rem;
+    text-align: left;
+    align-items: center;
+    /* justify-content: left; */
+}
+
 .blog-side-image {
-    width: 100%;
+    width: 20%;
     border-radius: .5rem;
 }
 
@@ -1056,6 +1078,14 @@ h3 {
 }
 
 .lg-center {
+    text-align: center;
+}
+.broad-padding{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.lead-center {
     text-align: center;
 }
 
@@ -1154,6 +1184,9 @@ h3 {
     .lead {
         text-align: left;
     }
+    /* .lead-center {
+        text-align: center;
+    } */
 
     .list {
         text-align: left;
@@ -1170,5 +1203,70 @@ h3 {
 
     .team-cards-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-tag {
+        padding: 1rem;
+    }
+
+    .sm-left {
+        text-align: left;
+    }
+
+    .about-heading {
+        text-align: center;
+    }
+
+    .contact-faq-section {
+        text-align: left;
+    }
+
+    .faq-accordian-container {
+        padding: 2rem;
+    }
+    .md-center{
+        padding: 0rem;
+    }
+    .questions-cards-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .questions-card {
+        width: 45%;
+    }
+    .about-cards-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .about-card {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .dotted-line {
+        width: 50%;
+    }
+    .legel-cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services-cards-container {
+        display: flex;
+    }
+    .service-card {
+        /* border: none;
+        border-radius: .7rem;
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 10px 10px 30px 5px #f0eded; */
+        width: 45%;
     }
 }
