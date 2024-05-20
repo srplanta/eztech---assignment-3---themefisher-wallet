@@ -1088,6 +1088,10 @@ h3 {
 .lead-center {
     text-align: center;
 }
+.terms-container{
+    display: flex;
+    flex-direction: column;
+}
 
 /* ###################################################### */
 
@@ -1260,13 +1264,16 @@ h3 {
         display: flex;
     }
     .service-card {
-        /* border: none;
-        border-radius: .7rem;
-        padding: 3rem 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 10px 10px 30px 5px #f0eded; */
         width: 45%;
+    }
+    .about-heading {
+        text-align: left;
+    }
+    .body-header {
+        font-size: .6rem;
+    }
+    .btn {
+        padding: .5rem;
+        font-size: .6rem;
     }
 }
